@@ -19,7 +19,7 @@ app.use(morgan('dev')); //logger
 app.use(express.json());    //body parser
 
 // ======= Routes =======
-app.use('/user', require('./routes/userRoutes'))
+app.use('/api/user', require('./routes/userRoutes'))
 
 app.get('/', (req,res) => {
     res.send('Welcome to my API!')
